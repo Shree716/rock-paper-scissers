@@ -22,3 +22,5 @@ player_B = 0
 rounds = 0
 tie = 0
 OLED.writeStringNewLine("Play the game!")
+basic.pause(5000)
+showScoreBoard()
