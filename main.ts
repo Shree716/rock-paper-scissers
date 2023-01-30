@@ -1,7 +1,3 @@
-input.onButtonPressed(Button.A, function () {
-    rounds += 1
-    player_A += 1
-})
 function showScoreBoard () {
     OLED.clear()
     OLED.writeStringNewLine("player A'" + player_A)
