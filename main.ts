@@ -17,6 +17,6 @@ player_A = 0
 player_B = 0
 rounds = 0
 tie = 0
-OLED.writeStringNewLine("Play the game!")
+OLED.writeStringNewLine("Suiiiiiii!")
 basic.pause(5000)
 showScoreBoard()
