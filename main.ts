@@ -1,5 +1,6 @@
 input.onButtonPressed(Button.A, function () {
     player_A += 1
+    rounds += 1
 })
 function showScoreBoard () {
     OLED.clear()
@@ -13,9 +14,11 @@ function showScoreBoard () {
 }
 input.onButtonPressed(Button.AB, function () {
     tie += 1
+    rounds += 1
 })
 input.onButtonPressed(Button.B, function () {
     player_B += 1
+    rounds += 1
 })
 input.onGesture(Gesture.Shake, function () {
     reset()
@@ -31,7 +34,7 @@ function reset () {
     showScoreBoard()
 }
 let tie = 0
-let rounds = 0
 let player_B = 0
+let rounds = 0
 let player_A = 0
 reset()
