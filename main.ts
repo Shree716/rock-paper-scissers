@@ -2,6 +2,7 @@ input.onButtonPressed(Button.A, function () {
     player_A += 1
     rounds += 1
     showScoreBoard()
+    basic.showString("A")
 })
 function showScoreBoard () {
     OLED.clear()
@@ -17,11 +18,13 @@ input.onButtonPressed(Button.AB, function () {
     tie += 1
     rounds += 1
     showScoreBoard()
+    basic.showString("tie")
 })
 input.onButtonPressed(Button.B, function () {
     player_B += 1
     rounds += 1
     showScoreBoard()
+    basic.showString("B")
 })
 input.onGesture(Gesture.Shake, function () {
     reset()
